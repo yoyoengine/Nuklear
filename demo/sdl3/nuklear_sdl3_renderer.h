@@ -380,8 +380,8 @@ void nk_sdl_shutdown(struct nk_context* ctx)
     }
 
     ctx->userdata = nk_handle_ptr(0);
-    SDL_free(sdl);
     nk_free(ctx);
+    SDL_free(sdl);
 }
 
 #endif /* NK_SDL3_RENDERER_IMPLEMENTATION_ONCE */
